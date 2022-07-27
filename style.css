@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .5s;
+  text-decoration: none;
+}
+
+.box_container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+}
+
+.box_container .box{
+  width: 700px;
+  background-color: #ad1457;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px #0007;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+.box_container .box .image{
+  width: 260px;
+  text-align: center;
+  background-color: #0005;
+  padding:60px 0;
+  clip-path:polygon(0 0, 80% 0, 100% 15%, 100% 85%, 76% 100%, 0 100%);
+}
+
+
+.box_container .box .image img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #ff4081 ;
+  object-fit: cover;
+}
+.box_container .box .content{
+  padding: 0 30px;
+}
+
+
+
+.name{
+  font-size: 29px;
+  color: #fff;
+}
+
+.job_title{
+  font-size: 17px;
+  color: #fff;
+  display: block;
+  padding-bottom:32px;
+}
+
+.info a{
+  color: #aaa;
+  display: block;
+  padding: 9px 0;
+  font-size: 14px;
+}
+
+.info a:hover{
+  color: #fff;
+}
+
+.info a i{
+  padding:2px 5px 0 1px;
+  font-size: 17px;
+}
+
+.social{
+  background-color: #fff;
+  height: 274px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 7px;
+  margin-left: auto;
+}
+
+.social a{
+  margin: 5px;
+  font-size: 22px;
+  color: #aaa;
+}
+
+
+.social .fa-facebook-f:hover {
+  color: #1877f2;
+}
+
+.social .fa-linkedin-in:hover {
+  color: #0077b5;
+}
+
+.social .fa-youtube:hover {
+  color: #ff0000;
+}
+
+.social .fa-twitter:hover {
+  color: #1da1f2;
+}
+
+@media (max-width:660px){
+  .box_container .box{
+    flex-direction: column;
+    width: 330px;
+  }
+  .box_container .box .image{
+    height: 200px;
+    width: 330px;
+    padding:40px 0;
+    clip-path:polygon(0 0, 100% 0, 100% 70%, 80% 100%, 20% 100%, 0 70%);
+  }
+  .box_container .box .image img{
+    height: 130px;
+    width: 130px;
+  }
+  .box_container .box .content{
+    padding: 30px 15px;
+  }
+  .box_container .box .social{
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    padding:5px 0;
+  }
+}
